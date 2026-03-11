@@ -1,0 +1,15 @@
+### Obtener productos
+GET http://localhost:8080/api/products
+
+###
+
+### Crear producto
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "id": "",
+  "name": "Teclado",
+  "quantity": "15",
+  "price": "100"
+}
