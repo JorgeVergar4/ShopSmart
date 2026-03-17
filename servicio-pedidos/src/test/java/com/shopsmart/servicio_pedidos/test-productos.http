@@ -1,0 +1,38 @@
+### 1. Obtener la lista de todos los usuarios
+GET http://localhost:8084/pedidos
+Accept: application/json
+
+###
+
+### 2. Crear un nuevo pedido (Laptop Gaming)
+POST http://localhost:8084/pedidos
+Content-Type: application/json
+
+{
+  "producto": "Laptop Gaming",
+  "cantidad": 1,
+  "precioTotal": 1250.50
+}
+
+###
+
+### 3. Crear otro pedido (Monitor)
+POST http://localhost:8084/pedidos
+Content-Type: application/json
+
+{
+  "producto": "Monitor 4K",
+  "cantidad": 2,
+  "precioTotal": 600.00
+}
+
+###
+
+### 4. Eliminar un pedido por ID
+# (no sea bobina y cambia el '1' por un ID que exista en tu DB)
+DELETE http://localhost:8084/pedidos/1
+
+###
+
+### 5. BORRAR TODOS LOS PEDIDOS (¡Cuidado!)
+DELETE http://localhost:8084/pedidos/all
