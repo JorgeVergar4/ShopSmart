@@ -1,0 +1,38 @@
+### 1. Obtener la lista de todos los usuarios
+GET http://localhost:8083/usuarios
+Accept: application/json
+
+###
+
+### 2. Crear un nuevo usuario (Pepe)
+POST http://localhost:8083/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Pepe",
+  "Run": "15.232.227-5",
+  "age": 25
+}
+
+###
+
+### 3. Crear otro usuario (Maria)
+POST http://localhost:8083/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Maria",
+  "Run": "20.123.456-k",
+  "age": 30
+}
+
+###
+
+### 4. Eliminar un usuario por ID
+# (no sea bobina y cambia el '1' por un ID que exista en tu DB)
+DELETE http://localhost:8083/usuarios/1
+
+###
+
+### 5. BORRAR TODOS LOS USUARIOS (¡Cuidado!)
+DELETE http://localhost:8083/usuarios/all
