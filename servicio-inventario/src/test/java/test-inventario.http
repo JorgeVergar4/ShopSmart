@@ -1,0 +1,38 @@
+### 1. Obtener la lista de todos los productos
+GET http://localhost:8081/productos
+Accept: application/json
+
+###
+
+### 2. Crear un producto nuevo de chill
+POST http://localhost:8081/productos
+Content-Type: application/json
+
+{
+  "nombre": "Energetica TULA",
+  "precio": 1000,
+  "stock": 1000
+}
+
+###
+
+### 3. Crear otro producto
+POST http://localhost:8081/productos
+Content-Type: application/json
+
+{
+  "nombre": "Galletas de avena",
+  "precio": 800,
+  "stock": 50
+}
+
+###
+
+### 4. Eliminar los productos por ID
+# (no sea bobina y cambia el '1' por un ID que exista en tu DB)
+DELETE http://localhost:8081/productos/1
+
+###
+
+### 5. borra productos
+DELETE http://localhost:8081/productos/all
